@@ -52,21 +52,35 @@
     <p class="mt-4 text-gray-600 font-semibold animate-pulse">กำลังประมวลผล...</p>
   </div>
 
-  <div id="page-login" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
-    <div class="bg-white/90 backdrop-blur p-8 rounded-2xl shadow-xl w-full max-w-md border border-white">
-      <div class="text-center mb-8">
+<div id="page-login" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+    <div class="bg-white/90 backdrop-blur p-8 rounded-2xl shadow-xl w-full max-w-md border border-white relative">
+      
+      <div class="text-center mb-6">
         <img id="login-logo" src="https://cdn.jsdelivr.net/gh/BabuEiEi/images/image - แก้ไขแล้ว.png" class="h-24 mx-auto mb-4 drop-shadow-md">
-        <h2 class="text-xl font-bold text-gray-800">ระบบบริหารจัดการทดสอบ O-NET ม.6</h2>
-        <p class="text-gray-500 text-sm">(Digital Testing)</p>
+        
+        <h2 class="text-xl font-bold text-gray-800 leading-tight">ระบบบริหารจัดการสอบ<br>O-NET ม.6</h2>
+        <p class="text-gray-500 text-sm font-medium">(Digital Testing)</p>
         <p class="text-indigo-600 font-bold mt-2 text-sm">ศูนย์ประสานงานการจัดสอบ สพม.พิษณุโลก อุตรดิตถ์</p>
       </div>
-      <form onsubmit="handleLogin(event)" class="space-y-5">
-        <input type="text" id="username" class="w-full px-4 py-2.5 border rounded-lg" placeholder="Username / รหัสโรงเรียน" required>
-        <input type="password" id="password" class="w-full px-4 py-2.5 border rounded-lg" placeholder="Password" required>
-        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-3 rounded-lg hover:shadow-lg">เข้าสู่ระบบ</button>
+
+      <form onsubmit="handleLogin(event)" class="space-y-4">
+        <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1 pl-1">ชื่อผู้ใช้งาน / รหัสโรงเรียน</label>
+            <input type="text" id="username" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition bg-white/50" placeholder="กรอก Username หรือ รหัสโรงเรียน" required>
+        </div>
+        <div>
+            <label class="block text-sm font-bold text-gray-700 mb-1 pl-1">รหัสผ่าน</label>
+            <input type="password" id="password" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition bg-white/50" placeholder="**********" required>
+        </div>
+        
+        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-3 rounded-lg hover:shadow-lg hover:opacity-90 transition duration-200 mt-4">เข้าสู่ระบบ</button>
       </form>
+
+      <div class="mt-8 text-center border-t border-gray-200/60 pt-4">
+         <p class="text-xs text-gray-400">© 2025 Copyright | พัฒนาโดย นายภัทรพล แก้วเสนา</p>
+      </div>
     </div>
-  </div>
+</div>
 
   <div id="page-dashboard" class="hidden min-h-screen flex flex-col">
     <nav class="bg-white shadow-md z-40 sticky top-0 h-16">
