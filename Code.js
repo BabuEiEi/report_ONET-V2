@@ -1,7 +1,7 @@
 // ==============================================
 // 1. CONFIGURATION
 // ==============================================
-const SPREADSHEET_ID = 'YOUR_SPREADSHEET_ID'; // <--- *** อย่าลืมใส่ ID Google Sheet ของคุณ ***
+const SPREADSHEET_ID = '1o3e54oD9soDyaNiSm9Z-BOTmkF2amkQ_M85ZLxtSaBw'; // <--- *** อย่าลืมใส่ ID Google Sheet ของคุณ ***
 
 // ==============================================
 // 2. CORE FUNCTIONS
